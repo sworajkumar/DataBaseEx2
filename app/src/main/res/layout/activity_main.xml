@@ -1,0 +1,91 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_product_no"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#f00"
+        android:hint="Enter Product Number"
+        android:ems="10"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_product_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#f00"
+        android:inputType="text"
+        android:hint="Enter Product Name"
+        android:ems="10"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_product_cost"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#f00"
+        android:inputType="numberDecimal"
+        android:hint="Enter Product Cost"
+        android:ems="10"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/insert_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5572b1"
+            android:ems="5"
+            android:gravity="center"
+            android:onClick="insertData"
+            android:padding="10dp"
+            android:text="Insert"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/update_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#5572b1"
+            android:ems="5"
+            android:gravity="center"
+            android:onClick="updateData"
+            android:padding="10dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/view_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#5572b1"
+            android:ems="5"
+            android:onClick="viewData"
+            android:padding="10dp"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
