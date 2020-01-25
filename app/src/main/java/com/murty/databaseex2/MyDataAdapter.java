@@ -14,8 +14,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.MyHolder>
-{
+public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.MyHolder> {
+
     ArrayList al;
     Context context;
 
@@ -70,7 +70,6 @@ public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.MyHolder>
              }
             }
         });
-
     }
 
     @Override

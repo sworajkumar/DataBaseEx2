@@ -17,14 +17,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         et1=findViewById(R.id.et_product_no);
         et2=findViewById(R.id.et_product_name);
         et3=findViewById(R.id.et_product_cost);
     }
 
     public void insertData(View view) {
-
         String no=et1.getText().toString().trim();
         String product_name=et2.getText().toString().trim();
         String cost=et3.getText().toString().trim();
@@ -110,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "Invalid Product Details", Toast.LENGTH_SHORT).show();
             }
-
         }
     }
 }

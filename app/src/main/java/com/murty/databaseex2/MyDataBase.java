@@ -9,12 +9,10 @@ public class MyDataBase extends SQLiteOpenHelper {
 
     public static final String dbname="myshop";
     public static final int version=1;
-
     public static final String table_name="product_details";
     public static final String one="product_no_col";
     public static final String two="product_name_col";
     public static final String three="product_cost_col";
-
     Context context;
 
     public MyDataBase(Context context) {
@@ -23,16 +21,14 @@ public class MyDataBase extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db)
-    {
+    public void onCreate(SQLiteDatabase db) {
         String qry="create table "+table_name+"("+one +" number PRIMARY KEY,"+two+" text,"+three+" real)";
         db.execSQL(qry);
         Toast.makeText(context, "Table Created", Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-    {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
 }

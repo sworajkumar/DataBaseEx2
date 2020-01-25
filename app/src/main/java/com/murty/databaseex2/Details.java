@@ -17,16 +17,13 @@ public class Details extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-
         ArrayList al=new ArrayList();
         RecyclerView rv=findViewById(R.id.rcv);
 
         MyDataBase mdb=new MyDataBase(this);
         SQLiteDatabase sdb=mdb.getWritableDatabase();
         Cursor c=sdb.query(MyDataBase.table_name,null,null,null,null,null,null);
-
-        if (c.moveToFirst())
-        {
+        if (c.moveToFirst()) {
             do {
                int no=c.getInt(0);
                String name=c.getString(1);
@@ -43,8 +40,7 @@ public class Details extends AppCompatActivity
             rv.setLayoutManager(new LinearLayoutManager(this));
             rv.setAdapter(new MyDataAdapter(this,al));
         }
-        else
-        {
+        else {
             Toast.makeText(this, "No Products Available", Toast.LENGTH_SHORT).show();
         }
 
